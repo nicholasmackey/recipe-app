@@ -1,13 +1,12 @@
 body {
   background: #151123;
-  font-family: sans-serif;
-  padding: 2rem;
 }
 
 .search {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 20px auto;
+  width: 80%;
+  margin: 1rem auto;
 }
 
 .search-box {
@@ -17,8 +16,7 @@ body {
 }
 
 button {
-  background-color: #ff029e;
-  color: #ffffff;
+  background-color: #ffc002;
   padding: 16px;
   border: none;
   font-weight: bolder;
@@ -36,16 +34,9 @@ button[disabled] {
 }
 
 .recipe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
-  background: #ffffff;
-  min-height: 350px;
-  position: relative;
 }
 
-.link {
-  position: absolute;
-  bottom: 20px;
-  text-decoration-color: #ff029e;
-  text-decoration-thickness: 0.125em;
-  text-underline-offset: 1.5px;
-}
+
+/*# sourceMappingURL=/main.af46ece4.css.map */
