@@ -1,0 +1,38 @@
+body {
+  background: #151123;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.search-box {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #ffc002;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+button[disabled] {
+  opacity: 0.2;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.recipe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
