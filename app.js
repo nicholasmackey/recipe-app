@@ -35,30 +35,3 @@ function displayRecipes(recipes) {
 
 form.addEventListener('submit', handleSubmit);
 fetchAndDisplay('pizza');
-
-const handleModal = (event) => {
-    const id = currentId;
-    hp = HP;
-    innerModal.innerHTML = 
-    `<div class="card">
-        <div class="card-title">
-            <h1 class="capitalize">${currentPokemon.name}</h1>
-            <span>${hp} HP</span>
-        </div>
-        <div class="card-body">
-            <div class="img-container">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${('00' + id).slice(-3)}.png" alt="A pokemon named: ${currentPokemon.name}">
-            </div>
-        </div>
-    </div>`;
-    outerModal.classList.add('open');
-}
-
-submit.addEventListener('click', handleModal);
-
-outerModal.addEventListener('click', event => {
-    const isOutside = !event.target.closest('.modal-inner');
-    if (isOutside) {
-    outerModal.classList.remove('open');
-    }
-});
